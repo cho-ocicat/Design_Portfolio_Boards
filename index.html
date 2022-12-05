@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 5 link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Gugi and Inter fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gugi&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Special Elite and Overlock fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Special+Elite&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-image:linear-gradient(#081c15,#344e41, #2d6a4f,#5b8e7d, #2d6a4f, #344e41, #081c15);
+            background-color:black;
+        }
+
+        footer{color:#52b69a;}
+
+        header{
+            color: white;
+            text-shadow:
+            -1px -1px 0 #2d6a4f,
+            1px -1px 0 #2d6a4f,
+            -1px 1px 0 #2d6a4f,
+            1px 1px 0 #2d6a4f,
+            0 0 7px #fff,
+            0 0 10px #0fa;
+        }
+
+        #opening h2, p{color:white}
+
+        .card{background-color:#1d1e18;}
+
+        a {
+            text-decoration: none;
+            color:#52b69a;
+        }
+        a:hover {color:white;}
+
+        .card {
+            box-shadow: 0 4px 8px 0 #b7e4c7;
+        }
+        .zoom {
+            transition: transform .5s;
+        }
+        .zoom:hover {
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+    </style>
+
+    <link href="./Images/Grey_Square.png" rel="icon" type="icon type">
+    <title>Highschool Portfolio</title>
+</head>
+<body>
+    <header class="container-fluid text-center p-3 pt-5">
+        <div>
+            <h1 style="font-family: 'Gugi', cursive; font-size: 70px;">DESIGN</h1>
+        </div>
+        <div>
+            <h4 style="font-family: 'Special Elite', cursive; font-size: 30px;">PORTFOLIO BOARD</h4>
+        </div>
+    </header>
+    <br>
+    <div id="opening" class="container text-center pt-2">
+        <h2 style="font-family: 'Overlock', cursive;"><b>Hello there!</b></h2>
+        <p>Welcome to my design’s humble abode. This website is an extra 1-week project from campus in which we must create a website to test our knowledge. This website idea of mine came from my interest in UI. I want to see how far I can experiment with images by showcasing my design folio board during the last two of my high school years.</p><br>
+        <p><b>Click on the image to see the board!</b></p>
+    </div>
+
+    <div class="container pb-3">
+        <div class="row row-cols-2 pb-4 text-center">
+            <div class="col">
+                <a href="deceit.html">
+                <div class="card h-100">
+                    <img id="enigma-chibi" onmouseover="showEnigma()" onmouseout="defaultEnigma()" src="./Images/Enigma chibi 1.png" class="card-img-top zoom">
+                    <div class="card-body" style="font-family: 'Gugi', cursive;">
+                    <h2 class="card-title">DECEIT</h2> 
+                    <h3 class="card-text">Year 12</h3>                                   
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="./entropy.html">
+                <div class="card h-100">
+                <img id="arcana-chibi" onmouseover="showArcana()" onmouseout="defaultArcana()" src="./Images/Arcana chibi 1.png" class="card-img-top zoom">
+                <div class="card-body" style="font-family: 'Special Elite', cursive;">
+                    <h2 class="card-title">Entropy</h2> 
+                    <h3 class="card-text">Year 13</h3>                                   
+                </div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <h6 class="py-4 m-0">Choisy Khairani<br>chokhairani@gmail.com</h6>
+    </footer>
+
+    <script>
+        var enigma = document.getElementById("enigma-chibi");
+        var arcana = document.getElementById("arcana-chibi");
+
+        function showEnigma(){
+            enigma.src = "./Images/Enigma chibi 2.png";
+        }
+        function defaultEnigma(){
+            enigma.src = "./Images/Enigma chibi 1.png";
+        }
+
+        function showArcana(){
+            arcana.src = "./Images/Arcana chibi 2.png";
+        }
+        function defaultArcana(){
+            arcana.src = "./Images/Arcana chibi 1.png";
+        }
+    </script>
+</body>
+</html>
