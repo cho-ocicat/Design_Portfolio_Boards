@@ -4,7 +4,7 @@ An extra project after Term 4's final assignments in December. We were given a w
 This is a website to showcase my folio boards from Design class in year 12-13.
 
 I learn a lot from making this website:
-- <map> tag;
+- map tag;
 - .zoom class;
 - .modal class, and;
 - using jQuery plugins
